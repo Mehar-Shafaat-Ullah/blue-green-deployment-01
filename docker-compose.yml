@@ -14,4 +14,4 @@ services:
     environment:
       - VERSION=green
     ports:
-      - "3002:3000"   # expose green on host port 3002
+      - "3002:3002"   # expose green on host port 3002
