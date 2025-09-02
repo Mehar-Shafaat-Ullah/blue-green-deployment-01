@@ -6,7 +6,7 @@ services:
     environment:
       - VERSION=blue
     ports:
-      - "3001:3000"   # expose blue on host port 3001
+      - "3001:3001"   # expose blue on host port 3001
 
   green:
     build: ./app
