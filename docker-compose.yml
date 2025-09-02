@@ -1,0 +1,17 @@
+version: '3'
+services:
+  blue:
+    build: ./app
+    container_name: app_blue
+    environment:
+      - VERSION=blue
+    ports:
+      - "3001:3001"   # expose blue on host port 3001
+
+  green:
+    build: ./app
+    container_name: app_green
+    environment:
+      - VERSION=green
+    ports:
+      - "3002:3002"   # expose green on host port 3002
